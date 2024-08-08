@@ -137,6 +137,14 @@ void enchant_dict_set_error (EnchantDict * dict, const char * const err);
 EnchantProvider *enchant_provider_new (void);
 
 /**
+ * enchant_provider_free
+ *
+ * Frees an EnchantProvider.
+ */
+void enchant_provider_unref (EnchantProvider * provider);
+#define enchant_provider_free enchant_provider_unref
+
+/**
  * enchant_provider_set_error
  * @provider: A non-null provider
  * @err: A non-null error message
