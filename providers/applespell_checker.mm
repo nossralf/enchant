@@ -314,7 +314,7 @@ static EnchantDict * appleSpell_provider_request_dict (EnchantProvider * me, con
 		AppleSpellDictionary * ASD = g_new0 (AppleSpellDictionary, 1);
 		if (!ASD)
 			{
-				g_free (dict);
+				enchant_broker_free_dict (me->owner, dict);
 				return 0;
 			}
 
@@ -324,7 +324,7 @@ static EnchantDict * appleSpell_provider_request_dict (EnchantProvider * me, con
 		if (!ASD->DictionaryName)
 			{
 				g_free (ASD);
-				g_free (dict);
+				enchant_broker_free_dict (me->owner, dict);
 				return 0;
 			}
 
@@ -443,7 +443,7 @@ extern "C" {
 				}
 			else
 				{
-					g_free (provider);
+					enchant_provider_free (provider);
 					provider = 0;
 				}
 
