@@ -216,7 +216,6 @@ libgnu/Makefile
 providers/Makefile
 src/Makefile
 src/enchant.1
-src/enchant-lsmod.1
 tests/Makefile
 ], [],
 [ENCHANT_MAJOR_VERSION="$ENCHANT_MAJOR_VERSION"])
