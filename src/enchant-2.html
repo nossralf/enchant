@@ -1,5 +1,5 @@
 <!-- Creator     : groff version 1.22.4 -->
-<!-- CreationDate: Sun Apr 28 23:22:20 2024 -->
+<!-- CreationDate: Sun Aug 11 20:04:42 2024 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -45,7 +45,7 @@ spellchecker</p>
 
 <p style="margin-left:11%; margin-top: 1em"><b>enchant-2
 -a</b>|<b>-l</b>|<b>-h</b>|<b>-v</b> [<b>-L</b>] [<b>-d</b>
-<i>DICTIONARY</i>] [<i>FILE</i>]</p>
+<i>DICTIONARY</i>] [<i>FILE...</i>]</p>
 
 <h2>DESCRIPTION
 <a name="DESCRIPTION"></a>
@@ -53,9 +53,7 @@ spellchecker</p>
 
 
 <p style="margin-left:11%; margin-top: 1em"><b>Enchant</b>
-is an Ispell-compatible spellchecker. Note that unlike
-Ispell, it does not have an interactive mode; it is designed
-to be used by other programs. <b><br>
+is a simple demo program for the Enchant library. <b><br>
 -d</b> <i>DICTIONARY</i></p>
 
 <p style="margin-left:22%;">use the given dictionary</p>
@@ -72,27 +70,13 @@ wordlist</p>
 <td width="3%">
 
 
-<p><b>-a</b></p></td>
-<td width="8%"></td>
-<td width="66%">
-
-
-<p>list suggestions in Ispell pipe mode format</p></td>
-<td width="12%">
-</td></tr>
-<tr valign="top" align="left">
-<td width="11%"></td>
-<td width="3%">
-
-
 <p><b>-l</b></p></td>
 <td width="8%"></td>
-<td width="66%">
+<td width="78%">
 
 
-<p>list only the misspellings</p></td>
-<td width="12%">
-</td></tr>
+<p>list misspellings in the given file, or standard
+input</p> </td></tr>
 <tr valign="top" align="left">
 <td width="11%"></td>
 <td width="3%">
@@ -100,12 +84,10 @@ wordlist</p>
 
 <p><b>-L</b></p></td>
 <td width="8%"></td>
-<td width="66%">
+<td width="78%">
 
 
-<p>display line numbers</p></td>
-<td width="12%">
-</td></tr>
+<p>display line numbers</p></td></tr>
 <tr valign="top" align="left">
 <td width="11%"></td>
 <td width="3%">
@@ -113,12 +95,10 @@ wordlist</p>
 
 <p><b>-h</b></p></td>
 <td width="8%"></td>
-<td width="66%">
+<td width="78%">
 
 
-<p>display help and exit</p></td>
-<td width="12%">
-</td></tr>
+<p>display help and exit</p></td></tr>
 <tr valign="top" align="left">
 <td width="11%"></td>
 <td width="3%">
@@ -126,12 +106,10 @@ wordlist</p>
 
 <p><b>-v</b></p></td>
 <td width="8%"></td>
-<td width="66%">
+<td width="78%">
 
 
-<p>display version information and exit</p></td>
-<td width="12%">
-</td></tr>
+<p>display version information and exit</p></td></tr>
 </table>
 
 <h2>FILES AND DIRECTORIES

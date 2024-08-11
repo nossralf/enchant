@@ -1,6 +1,6 @@
 \" Enchant program man page
 \"
-\" Copyright (C) 2017-2023 Reuben Thomas
+\" Copyright (C) 2017-2024 Reuben Thomas
 \"
 \" This library is distributed in the hope that it will be useful,
 \" but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -16,14 +16,12 @@ Enchant \- a spellchecker
 .SH SYNOPSIS
 .ll +8
 .B enchant-@ENCHANT_MAJOR_VERSION@
-\fB\-a\fR|\fB\-l\fR|\fB\-h\fR|\fB\-v\fR [\fB\-L\fR] [\fB\-d\fR \fIDICTIONARY\fR] [\fIFILE\fR]
+\fB\-a\fR|\fB\-l\fR|\fB\-h\fR|\fB\-v\fR [\fB\-L\fR] [\fB\-d\fR \fIDICTIONARY\fR] [\fIFILE...\fR]
 .ll -8
 .br
 .SH DESCRIPTION
 .B Enchant
-is an Ispell-compatible spellchecker.
-Note that unlike Ispell, it does not have an interactive mode; it is
-designed to be used by other programs.
+is a simple demo program for the Enchant library.
 .TP
 \fB\-d \fIDICTIONARY\fR
 use the given dictionary
@@ -31,11 +29,8 @@ use the given dictionary
 \fB\-p \fIWORDLIST\fR
 use the given personal wordlist
 .TP
-.B "\-a"
-list suggestions in Ispell pipe mode format
-.TP
 .B "\-l"
-list only the misspellings
+list misspellings in the given file, or standard input
 .TP
 .B "\-L"
 display line numbers

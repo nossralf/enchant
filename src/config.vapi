@@ -27,4 +27,7 @@
  */
 
 [CCode (cheader_filename = "config.h")]
+const string PACKAGE_STRING;
+
+[CCode (cheader_filename = "config.h")]
 const string PACKAGE_VERSION;
